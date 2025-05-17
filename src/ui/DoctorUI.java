@@ -12,23 +12,8 @@ import util.UiUtils;
 
 public class DoctorUI {
     private VBox view;
-    private TextField idField, fnameField, lnameField, addressField, phoneField, salaryField, specialtyField,departmentField;
-    private TextArea displayArea;
 
     public DoctorUI() {
-//        view = new HBox(10);
-//        view.setPadding(new Insets(10));
-//        view.setAlignment(Pos.TOP_CENTER);
-//
-//        Label title = new Label("Doctor Management");
-//
-//
-//
-//        HBox buttons = new HBox(10, addBtn, updateBtn, deleteBtn, viewBtn);
-//        buttons.setAlignment(Pos.CENTER);
-//
-//        view.getChildren().addAll(title, idField, fnameField, lnameField, addressField, phoneField,
-//                specialtyField, departmentField, buttons, displayArea);
         HBox topControls = UiUtils.createTopControls_Doctor();
         VBox tableSection = TableUtils.createDoctorTableSection();
         view = new VBox();
