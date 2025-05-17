@@ -123,8 +123,8 @@ public class DepartmentUI {
                         String.valueOf(n.getDirectorId())
                 });
             }
-            String table = util.TableUtil.formatTable(headers, rows);
-            displayArea.setText(table);
+//            String table = util.TableUtil.formatTable(headers, rows);
+//            displayArea.setText(table);
         } catch (Exception ex) {
             AlertUtils.showError("Error loading nurses: " + ex.getMessage());
         }
